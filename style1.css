@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+header{
+    position: relative;
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    top:0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    height: 50px;
+}
+
+nav a{
+    position: relative;
+    font-size: 18px;
+    color: azure;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav a::before{
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #ffa500;
+    transition: 0.3s;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.section1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.text1-container{
+    position: absolute;
+    z-index: 1;
+    padding-top: 200px;
+    padding-left: 70px;
+}
+
+.text1-container h4{
+    font-weight:10px;
+    font-size: 30px;
+    line-height: 2;
+}
+
+.text1-container h1{
+    font-weight:10px;
+    font-size: 40px;
+    line-height: 0.88;
+}
+
+.background1{
+    position: absolute;
+    z-index: 1;
+    height: 800px;
+    margin-top: -170px;
+    margin-left: 150px ;
+}
+
+
+
+.section2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.background2{
+    position: absolute;
+    z-index: 1;
+    height: 600px;
+    margin-top: 55px;
+    margin-left: 70px;
+    border-radius:40px;
+
+}
+
+.text2-container{
+    position: absolute;
+    z-index: 2;
+    padding-top: 75px ;
+    padding-left: 500px;
+}
+
+.About-Me{
+    color: #fdd300;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.Sub-Me{
+    display: flex;
+    font-style: italic;
+    word-wrap: break-word;
+    line-height: 60px;
+}
+
+/* Styles for tab links */
+.tab-titles1 {
+    display: flex;
+}
+
+.tab-titles1 .tab-links {
+    margin: 1px 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    background-color: #ffa500;
+    transition: 0.3s;
+    bottom: -8px;
+}
+
+/* Hover effect for tab links */
+.tab-links:hover::after {
+    width: 70%;
+}
+
+/* Hide all tab contents by default */
+.tab-contents .tab-content {
+    display: none;
+}
+
+/* Show the corresponding tab content when hovering over a tab link */
+.tab-links:hover + .tab-contents .tab-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
